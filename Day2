@@ -1,0 +1,28 @@
+ ________  ________  ________           _______  ________    _______   _______     
+|\   __  \|\   __  \|\   ____\         /  ___  \|\   __  \  /  ___  \ /  ___  \    
+\ \  \|\  \ \  \|\  \ \  \___|        /__/|_/  /\ \  \|\  \/__/|_/  //__/|_/  /|   
+ \ \   __  \ \  \\\  \ \  \           |__|//  / /\ \  \\\  \__|//  / /__|//  / /   
+  \ \  \ \  \ \  \\\  \ \  \____          /  /_/__\ \  \\\  \  /  /_/__  /  /_/__  
+   \ \__\ \__\ \_______\ \_______\       |\________\ \_______\|\________\\________\
+    \|__|\|__|\|_______|\|_______|        \|_______|\|_______| \|_______|\|_______|
+                                                                                   
+                Day 2: Log Analysis - Santa's Naughty & Nice List 
+                
+                
+"Santa’s Security Operations Center (SSOC) has noticed one of their web servers, santagift.shop has been hijacked by the Bandit Yeti APT group.
+Elf McBlue’s task is to analyse the log files captured from the web server to understand what is happening and track down the Bandit Yeti APT group."
+
+--SSH into the machine once it has deployed: ssh elfmcblue@[machine IP] and use the command "ls" to complete the first few questions.
+
+Question 5: On what day was Santa's naughty and nice list stolen?
+Hint: grep -iE "santa" webserver.log
+
+Question 6: What is the IP address of the attacker?
+Hint: Format is
+"[Attacker IP] - - [Date/Time] "GET /whatever"
+
+Question 7: What is the name of the important list that the attacker stole from Santa?
+Hint: _ _ _ _ _ _list.txt
+
+Question 8: Look through the log files for the flag. The format of the flag is: THM{}
+Hint: grep -rE "THM{"                                                          
